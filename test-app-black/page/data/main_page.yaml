@@ -1,0 +1,7 @@
+# action是行为，locator是策略
+goto_market_page:
+  - action: find_and_click
+    locator: [xpath, "//*[@text='行情']"]
+goto_mine_page:
+  - action: find_and_click
+    locator: [xpath, "//*[@text='我的']"]

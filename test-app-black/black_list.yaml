@@ -1,0 +1,7 @@
+# 这里的MobileBy.要去掉，只留ID，还要转为小写
+# MobileBy.ID和id是一个意思，避免yaml中不能引用MobileBy
+# By源码中是小写，所以也变成小写
+black_list:
+  - - id
+    - "com.xueqiu.android:id/tv_agree"
+# [(MobileBy.id,"com.xueqiu.android:id/tv_agree")]

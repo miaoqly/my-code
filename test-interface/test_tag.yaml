@@ -1,0 +1,23 @@
+test_add_tag:
+  - [[{'name':'tag_miao_0218'}],'group_miao_0218']
+  - [[{'name':'tag_miao1_0218'}],'group_miao1_0218']
+  - [[{'name':'tag_miao21_0218'},{'name':'tag_miao22_0218'}],'group_miao2_0218']
+test_add_only_tag:
+  - [{'name':'tag_miao1_0220'},{'name':'tag_miao2_0220'}]
+test_re_add_tag:
+  - [[{'name':'tag_miao_0218'}],'group_miao_0218']
+  - [[{'name':'tag_miao1_0218'}],'group_miao1_0218']
+  - [[{'name':'tag_miao21_0218'},{'name':'tag_miao22_0218'}],'group_miao2_0218']
+test_add_tag_fail:
+  - [[{'name':'tag_miao_0218'}],'2333333333333333333333333333333']
+  - [[{'name':'2333333333333333333333333333333'}],'group_miao1_0218']
+test_add_tag_fail_only_group:
+  - [[],"group_miao_0218"]
+test_delete_tag:
+  - 'tag_dmiao_0218'
+test_delete_group:
+  - 'group_dmiao_0218'
+test_deletes_tag:
+  - ['tag_delete1_miao_0218','tag_delete2_miao_0218']
+test_deletes_group:
+  - ['group_delete_miao_0218','group_delete1_miao_0218']
